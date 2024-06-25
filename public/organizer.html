@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raffle Organizer</title>
+  <link rel="stylesheet" href="style.css">  </head>
+<body>
+  <div class="container">  <h1>Raffle Draw Organizer</h1>
+    <div class="ticket-input">  <input type="text" id="ticketInput" placeholder="Enter ticket">
+      <button id="addButton">Add Ticket</button>
+    </div>
+    <div class="csv-upload">  <input type="file" id="csvInput" accept=".csv">
+      <button id="uploadButton">Upload CSV</button>
+    </div>
+    <div class="range-input">  <input type="number" id="rangeStart" placeholder="Start Range">
+      <input type="number" id="rangeEnd" placeholder="End Range">
+      <button id="addRangeButton">Add Range</button>
+    </div>
+    <button id="startButton">Start Draw</button>
+    <div id="result">Waiting for result...</div>
+    <div id="ticketList"></div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="organizer.js"></script>
+</body>
+</html>

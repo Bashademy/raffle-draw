@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;  /* Choose a modern font family */
+    margin: 0;  /* Remove default body margin */
+    padding: 20px;
+    display: flex;  /* Use flexbox for layout */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    min-height: 100vh;  /* Set minimum body height for full-screen feel */
+    background-color: #f5f5f5;  /* Light background color */
+  }
+  
+  .container {
+    background-color: #fff;  /* White container background */
+    border-radius: 10px;  /* Rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    padding: 30px;
+    max-width: 500px;  /* Set a maximum width for responsiveness */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .ticket-input, .csv-upload, .range-input {
+    display: flex;  /* Use flexbox for input groups */
+    margin-bottom: 15px;
+  }
+  
+  .ticket-input input, .csv-upload input, .range-input input {
+    flex: 1;  /* Make inputs fill available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .ticket-input button, .csv-upload button, .range-input button {
+    padding: 10px 20px;
+    background-color: #007bff;  /* Blue button color */
+    color: #fff;  /* White button text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ticket-input button:hover, .csv-upload button:hover, .range-input button:hover {
+    background-color: #0062cc;  /* Darker blue on hover */
+  }
+  
+  #startButton {
+    margin-top: 20px;
+    display: block;  /* Make button take full width */
+    width: 100%;
+  }
+  
+  #result, #ticketList {
+    margin-top: 20px;
+  }
+  
+  #result {
+    font-size: 1.2em;  /* Adjust result font size */
+  }
+  
